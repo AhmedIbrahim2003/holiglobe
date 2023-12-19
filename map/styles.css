@@ -1,11 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'open sans', sans-serif;
 }
 
 body {
-    overflow-x: hidden;
-    overflow-y: hidden;
     background-color: #333e4d;
 }
 
@@ -21,4 +20,57 @@ body {
 }
 svg path {
     cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+a:hover{
+    color: orange;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap: 5rem;
+}
+.get-started{
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.get-started:hover{
+    background-color: white;
+    color: #000;
+    scale: 1.1;
+}
+.get-started:active{
+    scale: 1;
 }
