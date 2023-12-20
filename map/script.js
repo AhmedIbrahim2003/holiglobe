@@ -7,19 +7,10 @@ document.querySelectorAll(".allPaths").forEach(e => {
             document.getElementById('name').style.top = y - 60 + 'px'
             document.getElementById('name').style.left = x + 10 + 'px'
         }
-        const classes = e.className.baseVal.replace(/ /g, '.')
-        document.querySelectorAll(`.${classes}`).forEach(country => {
-            country.style.fill = "#7DDEF2"
-        })
         document.getElementById("name").style.opacity = 1
-
         document.getElementById("namep").innerText = e.id
     })
     e.addEventListener("mouseleave", function () {
-        const classes = e.className.baseVal.replace(/ /g, '.')
-        document.querySelectorAll(`.${classes}`).forEach(country => {
-            country.style.fill = "#ececec"
-        })
         document.getElementById("name").style.opacity = 0
     })
 
@@ -35,3 +26,18 @@ document.querySelectorAll(".allPaths").forEach(e => {
             })
     });
 });
+
+let button = document.getElementById("get-started");
+
+let button2 = document.getElementById("get-started2");
+
+let contact = document.getElementById("contact-btn");
+
+button.addEventListener("click", () => window.scrollTo({ top: 960, behavior: 'smooth' })
+);
+
+button2.addEventListener("click", () => window.scrollTo({ top: 960, behavior: 'smooth' })
+);
+
+contact.addEventListener("click", () => window.scrollTo({ top: 1500, behavior: 'smooth' })
+);

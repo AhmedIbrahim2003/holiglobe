@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/Under-Dev/backgorund-img.avif");
+    background-image: url("/map/main-image.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #000;
@@ -24,6 +24,13 @@ body {
 
 svg path {
     cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    fill: rgb(81, 124, 105);
+}
+
+svg path:hover {
+    fill: #7DDEF2;
+    transition: all 0.15s ease-in-out;
 }
 
 li {
@@ -34,6 +41,7 @@ a {
     text-decoration: none;
     color: white;
     font-size: 1.3rem;
+    transition: all 0.15s ease-in-out;
 }
 
 a:hover {
@@ -94,13 +102,6 @@ header {
     font-weight: 900;
     text-align: center;
 }
-.holiglobe{
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    overflow: hidden;
-    padding: 20px;
-    border-radius: 50px;
-    z-index: -100;
-}
 
 .page-header h2 {
     color: #d1d1d1;
@@ -124,6 +125,13 @@ header {
     box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
 }
 
+.page-header a:active {
+    background: #fff;
+    color: #000;
+    scale: 1.1;
+    box-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
 .page-header a {
     border: 1px solid #fff;
     padding: 10px 25px;
@@ -141,7 +149,8 @@ header {
     text-align: center;
     border-radius: 10px;
 }
-.start-page{
+
+.start-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,4 +158,82 @@ header {
     text-align: center;
     height: 700px;
     margin: 5% 0;
+}
+
+.map {
+    padding-top: 30px;
+    background-color: rgb(16, 25, 22);
+}
+
+.map .map-header h1{
+    color: #fff;
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.footerwrapper {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 2vw 10vw 2vw 10vw;
+    background: rgb(16, 25, 22);
+    /*linear-gradient(to top, rgb(13, 33, 40), rgb(13, 33, 40), rgb(13, 33, 40), rgb(13, 33, 40), rgb(13, 33, 40), black)*/
+}
+
+.dataandform {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerwrapper .footdata h1 {
+    font-size: 80px;
+    color: white;
+}
+
+.footerwrapper .footdata p {
+    font-weight: 500;
+    margin-top: 30px;
+    color: white;
+    width: 30vw;
+}
+
+.footerwrapper .footform form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.footerwrapper .footform form input {
+    background-color: transparent;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.footerwrapper .footform form .message {
+    padding-bottom: 100px;
+}
+
+.footerwrapper .footform form button {
+    font-size: 20px;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 2px solid white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.footerwrapper .footform form button:hover {
+    color: grey;
+    scale: 1.1;
+    transition: 0.4s;
 }
