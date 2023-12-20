@@ -2,8 +2,8 @@ document.querySelectorAll(".allPaths").forEach(e => {
     e.setAttribute('class', `allPaths ${e.id}`);
     e.addEventListener("mouseover", function () {
         window.onmousemove = function (j) {
-            x = j.clientX
-            y = j.clientY
+            x = j.pageX
+            y = j.pageY
             document.getElementById('name').style.top = y - 60 + 'px'
             document.getElementById('name').style.left = x + 10 + 'px'
         }
@@ -30,7 +30,6 @@ document.querySelectorAll(".allPaths").forEach(e => {
                 if (!response.ok) {
                     window.location.assign("/Under-Dev/index.html");
                 } else {
-                    console.log(url);
                     window.location.assign(url);
                 }
             })
