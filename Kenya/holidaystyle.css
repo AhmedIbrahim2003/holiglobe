@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align:justify;  
+    text-justify:inter-word;
+
+}
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    transition: all 0.15s ease-in-out;
+}
+
+a:hover {
+    color: orange;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin: 10px auto;
+    max-width: 1300px;
+}
+
+.navbar .logo a {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar .links {
+    display: flex;
+    gap: 5rem;
+}
+
+
+.DialogContent {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#DiaogImage {
+    width: 45%;
+    object-fit:contain;
+    /* mix-blend-mode: color-burn; */
+}
+
+.DialogInfo {
+    display: flex;
+    padding-top: 40vh;
+    margin: auto 0;
+    align-items: center;
+    width: 55%;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.nameAndDescriptionContainer {
+    height: 80%;
+    padding: 0 1vw;
+}
+
+.DialogInfo div h2 {
+    margin-bottom: 15px;
+}
+
+#bookDescription {
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .image-container {
+    flex: 0 0 30%;
+  }
+  
+  .text-container {
+    flex: 1 1 auto;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+  }
+  p {
+    padding-right: 50px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .image-container img {
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc; 
+  }
+  .justtext h2{
+        font-weight: bold;
+        text-align: left;
+  }
+  .justtext{
+    margin: 0 auto;
+    max-width:fit-content;
+    padding-left: 20px;
+  }
+  .YOUTUBE{
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+  }
